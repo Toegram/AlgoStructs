@@ -18,17 +18,18 @@ function reverse(str) {
   //
   // return reversed.join('')
   //SOLUTION 3
-  // let reversed = "";
-  //
-  // for (let char of str) {
-  //   reversed = char + reversed;
-  // }
-  //
-  // return reversed;
-  //SOLUTION 4
-  return str.split("").reduce((reversed, char) => {
-    return (reversed = char + reversed);
-  }, "");
-}
+  let reversed = "";
 
+  for (let char of str) {
+    debugger;
+    reversed = char + reversed;
+  }
+
+  return reversed;
+  //SOLUTION 4
+  // return str.split("").reduce((reversed, char) => {
+  //   return (reversed = char + reversed);
+  // }, "");
+}
+reverse("tony");
 module.exports = reverse;
